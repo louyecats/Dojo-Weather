@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="nav">
+        <h1>DojoWeather</h1>
+        <div id="nav_links">
+            <a href="#" onclick="alert('Loading Weather Report')">Burbank</a>
+            <a href="#" onclick="alert('Loading Weather Report')">Chicago</a>
+            <a href="#" onclick="alert('Loading Weather Report')">Dallas</a>
+        </div>
+    </div>
+    <div id="main_content">
+        <div class="city">
+            <h2> San Jose</h2>
+            <div id="temperatureoption">
+                <label for="choosetemperaturetype">show temperature in</label>
+                <select name="temperaturetype" id="temptype" onchange="swap(this)">
+                    <option value="celsius">°C</option>
+                    <option value="farenheight">°F</option>
+                </select>
+            </div>
+        </div>
+        
+        <hr>
+        <div class="four_days">
+            <div class="day">
+                <h3>Today</h3>
+                <img src="./assets/some_rain.png" alt="some rain">
+                <p>some rain</p>
+                <p><span class="high" id="degree1">24</span> <span class="low" id="degree2">18</span></p>
+            </div>
+            <div class="day">
+                <h3>Tomorrow</h3>
+                <img src="./assets/some_sun.png" alt="some sun">
+                <p>some sun</p>
+                <p><span class="high" id="degree3">27</span> <span class="low" id="degree4">19</span></p>
+            </div>
+            <div class="day">
+                <h3>Friday</h3>
+                <img src="./assets/some_clouds.png" alt="some clouds">
+                <p>some clouds</p>
+                <p><span class="high" id="degree5">21</span> <span class="low" id="degree6">16</span></p>
+            </div>
+            <div class="day">
+                <h3>Saturday</h3>
+                <img src="./assets/some_sun.png" alt="some sun">
+                <p>some sun</p>
+                <p><span class="high" id="degree7">26</span> <span class="low" id="degree8">21</span></p>
+            </div>
+        </div>    
+        <div id="cookiepolicy">
+            <img src="./assets/cookie.png" alt="cookie data">
+            <div id="policy">
+                <p class="title">Stop! Cookie time</p>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyze our traffic. <a href="#">Read more...</a></p>
+            </div>
+            <button onclick="dismiss()">I Accept</button>
+        </div>
+    </div>
+    </body>
+    </html>
